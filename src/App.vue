@@ -1,6 +1,6 @@
 <script setup>
 import { computed, reactive } from 'vue';
-import basket from './components/BasketComponent.vue';
+import BasketTable from './components/BasketTable.vue';
 
 const todos = reactive([
   { id: 1, text: 'Создать TodoList приложение', completed: false },
@@ -72,7 +72,7 @@ const clearAll = () => {
       </div>
     </div>
     <hr>
-    <basket></basket>
+    <BasketTable />
 </template>
 
 
